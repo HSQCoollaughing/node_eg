@@ -1,0 +1,87 @@
+    1  cat
+    2  cat /etc/hostname
+    3  vi /etc/hostname
+    4  cat /etc/hosts
+    5  vi /etc/hosts
+    6  exit
+    7  hostname zry
+    8  exit
+    9  apt-get update
+   10  apt-get install npm
+   11  npm install n -g
+   12  n 8.5
+   13  node -v
+   14  apt-get install git
+   15  git clone https://github.com/zhufengnodejs/201707chat.git
+   16  cd 201707chat
+   17  npm install
+   18  apt-get install mongodb
+   19  npm install pm2 -g
+   20  apt-get install nginx
+   21  history
+   22  ls
+   23  node server.js
+   24  cat server.js
+   25  git pull origin master
+   26  node server.js
+   27  pm2 start server.js --name "chat"
+   28  ifconfig
+   29  cd ..
+   30  ls
+   31  mv 201707chat 201707chat-2
+   32  ls
+   33  cp 201707chat-2 201707chat
+   34  cp -R 201707chat-2 201707chat
+   35  ls
+   36  cd 201707chat-2
+   37  ls
+   38  vi server.js
+   39  pm2 start server.js --name "chat2"
+   40  cd /etc/nginx/sites-enabled
+   41  ls
+   42  vi chat
+   43  cat chat
+   44  vi chat
+   45  cat chat
+   46  nginx -s reload
+   47  ls
+   48  cat default
+   49  ls
+   50  cd /var/www/html
+   51  ls
+   52  vi hello.txt
+   53  ls
+   54  mkdir a
+   55  cd a
+   56  touch 1.html
+   57  pwd
+   58  cd ..
+   59  ls
+   60  cd a
+   61  pwd
+   62  ls
+   63  vi 1.html
+   64  cd ..
+   65  ls
+   66  pwd
+   67  exit
+   68  cd /var/www/html
+   69  ls
+   70  cd baidu
+   71  ls
+   72  cd /etc/nginx/sites-enabled
+   73  ls
+   74  cat default | grep -v "#"
+   75  ls
+   76  cat chat
+   77  ls
+   78  rm chat
+   79  rm default
+   80  vi default
+   81  kill -HUP nginx
+   82  nginx -s reload
+   83  vi default
+   84  nginx -s reload
+   85  ping newhand.org
+   86  nginx -s reload
+   87  history
