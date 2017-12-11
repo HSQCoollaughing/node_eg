@@ -20,19 +20,21 @@
 //withRouter方式
 import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom';
+
 class Profile extends Component {
-	handClick = ()=>{
-		localStorage.removeItem('login');
-		this.props.history.push('/');
-	}
-	render() {
-		return (
+    handClick = () => {
+        localStorage.removeItem('login');
+        this.props.history.push('/');
+    }
+
+    render() {
+        return (
             <div>
-              个人页面<br/>
-              <button className="btn btn-danger" onClick={this.handClick}>退出登录</button>
+                个人页面<br/>
+                <button className="btn btn-danger" onClick={this.handClick}>退出登录</button>
             </div>
-		)
-	}
+        )
+    }
 }
 
 export default withRouter(Profile);
