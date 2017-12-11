@@ -3,8 +3,7 @@ import {
     HashRouter as Router,
     Route,
     Link,
-    Switch,
-    Nomatch
+    Switch
 } from 'react-router-dom';
 import Home from "./components/Home/index";
 import User from "./components/User/index";
@@ -12,7 +11,9 @@ import Profile from "./components/Profile/index";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./components/Login/index";
 import MenuLink from "./components/MenuLink";
-
+function NoMatch() {
+    return <h1>未找到页面</h1>
+}
 export default (
     <Router>
         <div>
@@ -34,7 +35,7 @@ export default (
                     <Route path="/user" component={User}/>
                     <Route path="/login" component={Login}/>
                     <ProtectedRoute path="/profile" component={Profile}/>
-                    <Route component={Nomatch}/>
+                    <Route component={NoMatch}/>
                 </Switch>
             </div>
         </div>
